@@ -16,7 +16,7 @@ const Login = () => {
       console.log(email);
       try {
         await account.createEmailSession(email, password);
-        navigate("/profile");
+        navigate("/");
       } catch (error) {
         console.log(error);
       }
